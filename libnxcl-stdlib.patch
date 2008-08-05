@@ -1,0 +1,26 @@
+diff -ur freenx-client-0.9/nxcl/lib/notQt.h freenx-client-0.9.new/nxcl/lib/notQt.h
+--- freenx-client-0.9/nxcl/lib/notQt.h	2008-03-11 00:13:08.000000000 +0100
++++ freenx-client-0.9.new/nxcl/lib/notQt.h	2008-08-05 13:07:08.059964660 +0200
+@@ -28,6 +28,7 @@
+ #ifndef _NOTQT_H_
+ #define _NOTQT_H_
+ 
++#include <stdlib.h>
+ #include <list>
+ #include <vector>
+ #include <string>
+Tylko w freenx-client-0.9.new/nxcl/lib: notQt.h~
+diff -ur freenx-client-0.9/nxcl/lib/nxclientlib.h freenx-client-0.9.new/nxcl/lib/nxclientlib.h
+--- freenx-client-0.9/nxcl/lib/nxclientlib.h	2008-03-11 00:13:08.000000000 +0100
++++ freenx-client-0.9.new/nxcl/lib/nxclientlib.h	2008-08-05 13:09:10.796602307 +0200
+@@ -28,7 +28,8 @@
+ #include "nxsession.h"
+ #include <list>
+ #include "notQt.h"
+-
++#include <stdlib.h>
++#include <string.h>
+ 
+ using namespace std;
+ 
+Tylko w freenx-client-0.9.new/nxcl/lib: nxclientlib.h~
