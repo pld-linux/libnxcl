@@ -38,7 +38,7 @@ Static nxcl library.
 Statyczna biblioteka nxcl
 
 %prep
-%setup -q
+%setup -q -n freenx-client-%{version}
 %patch0 -p1
 
 %build
