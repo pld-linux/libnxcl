@@ -4,7 +4,7 @@ Version:	0.9
 Release:	0.1
 License:	GPL v2
 Group:		Libraries
-Source0:	http://download.berlios.de/freenx/%{name}-%{version}.tar.bz2
+Source0:	http://download.berlios.de/freenx/freenx-client-%{version}.tar.bz2
 # Source0-md5:	777b3cda7a245e3870d4870a9460cb73
 Patch0:		%{name}-stdlib.patch
 URL:		http://freenx.berlios.de/
