@@ -1,7 +1,8 @@
 Summary:	A Library for building NoMachine (NX) clients
+Summary(pl.UTF-8):	Biblioteka potrzebna do kompilacji klientów NoMachine (NX)
 Name:		libnxcl
 Version:	0.9
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://download.berlios.de/freenx/freenx-client-%{version}.tar.bz2
@@ -11,11 +12,14 @@ URL:		http://freenx.berlios.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A Library for building NoMachine (NX) clients
+A Library for building NoMachine (NX) clients.
+
+%description -l pl.UTF-8
+Biblioteka potrzebna do kompilacji klientów NoMachine (NX).
 
 %package devel
-Summary:	Header files for ... library
-Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki ...
+Summary:	Header files for nxcl library
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki nxcl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -23,7 +27,7 @@ Requires:	%{name} = %{version}-%{release}
 Header files for nxcl library.
 
 %description devel -l pl.UTF-8
-Pliki nagłówkowe biblioteki nxcl
+Pliki nagłówkowe biblioteki nxcl.
 
 %package static
 Summary:	Static nxcl library
@@ -35,7 +39,7 @@ Requires:	%{name}-devel = %{version}-%{release}
 Static nxcl library.
 
 %description static -l pl.UTF-8
-Statyczna biblioteka nxcl
+Statyczna biblioteka nxcl.
 
 %prep
 %setup -q -n freenx-client-%{version}
