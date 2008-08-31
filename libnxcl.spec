@@ -1,12 +1,16 @@
+#
+%define _snap r612
+#
 Summary:	A Library for building NoMachine (NX) clients
 Summary(pl.UTF-8):	Biblioteka potrzebna do kompilacji klientów NoMachine (NX)
 Name:		libnxcl
-Version:	0.9
-Release:	1
+Version:	1.0
+Release:	0.%{_snap}.1
 License:	GPL v2
 Group:		Libraries
-Source0:	http://download.berlios.de/freenx/freenx-client-%{version}.tar.bz2
-# Source0-md5:	777b3cda7a245e3870d4870a9460cb73
+#Source0:	http://download.berlios.de/freenx/freenx-client-%{version}.tar.bz2
+Source0:	freenx-client-%{_snap}.tar.bz2
+# Source0-md5:	4a967fb7e95f0afbd11054ddabde44bc
 Patch0:		%{name}-stdlib.patch
 URL:		http://freenx.berlios.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,7 +46,7 @@ Static nxcl library.
 Statyczna biblioteka nxcl.
 
 %prep
-%setup -q -n freenx-client-%{version}
+%setup -q -n freenx-client-%{_snap}
 %patch0 -p1
 
 %build
