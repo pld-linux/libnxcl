@@ -1,5 +1,5 @@
 #
-%define _snap r612
+%define _snap r631
 #
 Summary:	A Library for building NoMachine (NX) clients
 Summary(pl.UTF-8):	Biblioteka potrzebna do kompilacji klientów NoMachine (NX)
@@ -10,7 +10,7 @@ License:	GPL v2
 Group:		Libraries
 #Source0:	http://download.berlios.de/freenx/freenx-client-%{version}.tar.bz2
 Source0:	freenx-client-%{_snap}.tar.bz2
-# Source0-md5:	4a967fb7e95f0afbd11054ddabde44bc
+# Source0-md5:	59659e73cb99e5702219a6a13b8debb8
 Patch0:		%{name}-stdlib.patch
 URL:		http://freenx.berlios.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,7 +46,7 @@ Static nxcl library.
 Statyczna biblioteka nxcl.
 
 %prep
-%setup -q -n freenx-client-%{_snap}
+%setup -q -n freenx-client
 %patch0 -p1
 
 %build
