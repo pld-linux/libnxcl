@@ -80,10 +80,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%_libdir/libnxcl.so
+%{_libdir}/libnxcl.so
 %{_includedir}/nxcl
-%_libdir/libnxcl.la
-%_libdir/pkgconfig/nxcl.pc
+%{_libdir}/libnxcl.la
+%{_libdir}/pkgconfig/nxcl.pc
 
 %files static
 %defattr(644,root,root,755)
