@@ -43,7 +43,7 @@ Statyczna biblioteka nxcl.
 
 %prep
 %setup -q -n freenx-client-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 cd nxcl
