@@ -2,12 +2,13 @@ Summary:	A Library for building NoMachine (NX) clients
 Summary(pl.UTF-8):	Biblioteka potrzebna do kompilacji klientów NoMachine (NX)
 Name:		libnxcl
 Version:	0.9
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://download.berlios.de/freenx/freenx-client-%{version}.tar.bz2
 # Source0-md5:	777b3cda7a245e3870d4870a9460cb73
 Patch0:		%{name}-stdlib.patch
+Patch1:		%{name}-unistd.patch
 URL:		http://freenx.berlios.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,6 +45,7 @@ Statyczna biblioteka nxcl.
 %prep
 %setup -q -n freenx-client-%{version}
 %patch -P0 -p1
+%patch -P1 -p1
 
 %build
 cd nxcl

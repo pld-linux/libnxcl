@@ -1,0 +1,10 @@
+--- freenx-client-0.9/nxcl/test/notQttest.cpp.orig	2008-03-11 00:13:08.000000000 +0100
++++ freenx-client-0.9/nxcl/test/notQttest.cpp	2008-03-11 00:13:08.000000000 +0100
+@@ -19,6 +19,7 @@
+ #include <iostream>
+ #include <string>
+ #include <list>
++#include <unistd.h>
+
+ #include "notQt.h"
+
